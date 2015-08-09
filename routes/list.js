@@ -25,7 +25,7 @@ router.get('/', function(req, res, next) {
   function (error, results, fields) {
     if (error) return next(error);
     // console.log(results);
-    res.render('list', { title: 'Express', list: results });
+    res.render('list', { title: 'Express Sample', list: results });
   });
 });
 
