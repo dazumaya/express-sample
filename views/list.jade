@@ -1,0 +1,17 @@
+extends layout
+
+block content
+  h1= title
+  div.container
+    table.table.table-striped.table-bordered
+      thead
+        tr 
+          th line_id
+          th date
+          th count
+      tbody
+        - each row in list
+          tr
+            td= row.line_id
+            td= row.date
+            td= row.count
